@@ -1,0 +1,155 @@
+{% extends "website/base.html" %}
+
+{% block title %}
+Home | My Website
+{% endblock %}
+
+
+{% block content %}
+
+<section class="bg-primary text-white py-5">
+    <div class="container py-5">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-7">
+
+                <h1 class="display-4 fw-bold">
+                    Welcome to Our Website
+                </h1>
+
+                <p class="lead mt-3">
+                    We provide modern and reliable solutions
+                    to help businesses grow.
+                </p>
+
+                <a
+                    href="{% url 'contact' %}"
+                    class="btn btn-light btn-lg mt-3"
+                >
+                    Contact Us
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<section class="py-5">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2 class="fw-bold">
+                Our Features
+            </h2>
+
+            <p class="text-muted">
+                Everything you need to get started.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+
+                <div class="card h-100 shadow-sm border-0">
+
+                    <div class="card-body text-center p-4">
+
+                        <h4>
+                            Modern Design
+                        </h4>
+
+                        <p class="text-muted">
+                            Clean and responsive design
+                            that works on all devices.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="card h-100 shadow-sm border-0">
+
+                    <div class="card-body text-center p-4">
+
+                        <h4>
+                            Reliable Service
+                        </h4>
+
+                        <p class="text-muted">
+                            Simple and reliable solutions
+                            built with modern technology.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="card h-100 shadow-sm border-0">
+
+                    <div class="card-body text-center p-4">
+
+                        <h4>
+                            Customer Support
+                        </h4>
+
+                        <p class="text-muted">
+                            We're here to help you whenever
+                            you need assistance.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="bg-light py-5">
+
+    <div class="container text-center">
+
+        <h2 class="fw-bold">
+            Ready to Get Started?
+        </h2>
+
+        <p class="text-muted">
+            Contact us today and let's discuss your requirements.
+        </p>
+
+        <a
+            href="{% url 'contact' %}"
+            class="btn btn-primary"
+        >
+            Get in Touch
+        </a>
+
+    </div>
+
+</section>
+
+{% endblock %}
